@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light teal background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.stopwatch:hover {
+    transform: scale(1.05);
+}
+
+.time {
+    font-size: 64px; /* Larger font size */
+    font-weight: bold;
+    color: #00796b; /* Dark teal color */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    margin: 5px;
+    font-size: 18px; /* Slightly larger font size */
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Rounded buttons */
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #00796b; /* Primary button color */
+    color: white;
+}
+
+.btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
